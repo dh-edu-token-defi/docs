@@ -1,0 +1,13 @@
+{
+    "plugins": ["search", "sharing", "scripts"],
+    "styles": {
+        "website": "./styles.css"
+    },
+    "pluginsConfig": {
+        "scripts": {
+            "files": [
+                "./script.js"
+            ]
+        }
+    }
+}
