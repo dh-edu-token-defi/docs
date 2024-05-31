@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Executive Summary](what-is-this-about.md)
+* [Summary](what-is-this-about.md)
 * [Key Features](key-features.md)
 * [Second Order Effects](second-order-effects.md)
 * [Technical Walkthrough](technical-walkthrough.md)
