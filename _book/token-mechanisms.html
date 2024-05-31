@@ -97,7 +97,7 @@
                 <a href="what-is-this-about.html">
             
                     
-                    Executive Summary
+                    Summary
             
                 </a>
             
@@ -228,72 +228,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="token-mechanisms">Token Mechanisms</h1>
-<h2 id="overview">Overview</h2>
-<p>The token mechanisms within the Meme Token Launcher are designed to facilitate the creation, distribution, and management of meme tokens. These mechanisms ensure that the tokens operate efficiently within the ecosystem and provide value to the participants.</p>
-<h2 id="token-minting">Token Minting</h2>
-<h3 id="process">Process</h3>
+                                <h3 id="who-dis">who dis</h3>
+<p>yeet fees go into a shared pool that rewards successful yeets. </p>
 <ul>
-<li>Tokens are minted through a smart contract.</li>
-<li>The minting process is initiated by the user via the frontend application.</li>
-<li>The backend service interacts with the smart contract to mint the specified amount of tokens.</li>
+<li>would compound as more yeets are attempted and some fail. </li>
+<li>create incentive for pre sale participants</li>
+<li>creates volatility with new pool</li>
+<li>could be used to incentives first successfull yeets with garunteed max reward (if pool is bootstrapped with some funds)</li>
 </ul>
-<h3 id="key-functions">Key Functions</h3>
+<p>example: 10% fee on yeet</p>
 <ul>
-<li><strong><code>mint(address to, uint256 amount)</code></strong>: Mints new tokens to the specified address.</li>
+<li>9% to shared reward pool (more of a yeet deposit)</li>
+<li>1% to yeeter/ph dev</li>
 </ul>
-<h3 id="events">Events</h3>
+<p>on success (meets threshold in time window)</p>
 <ul>
-<li><strong><code>Mint(address indexed to, uint256 amount)</code></strong>: Emitted when new tokens are minted.</li>
+<li>claim reward before execute on transfer % to safe (min 9%, max ??)</li>
+<li>execute then creates a pool with more native funds</li>
 </ul>
-<h2 id="token-distribution">Token Distribution</h2>
-<h3 id="initial-distribution">Initial Distribution</h3>
-<ul>
-<li>Upon creation, tokens are distributed according to predefined rules.</li>
-<li>Distribution mechanisms include airdrops, liquidity mining, and staking rewards.</li>
-</ul>
-<h3 id="ongoing-distribution">Ongoing Distribution</h3>
-<ul>
-<li>Tokens continue to be distributed through various incentives like yield farming and governance rewards.</li>
-</ul>
-<h2 id="liquidity-provision">Liquidity Provision</h2>
-<h3 id="uniswap-v3-integration">Uniswap V3 Integration</h3>
-<ul>
-<li>Liquidity is provided on Uniswap V3 to ensure market availability.</li>
-<li>The process involves wrapping ETH to WETH and pairing it with the newly minted tokens.</li>
-</ul>
-<h3 id="functions">Functions</h3>
-<ul>
-<li><strong><code>addLiquidity(uint256 tokenAmount, uint256 ethAmount)</code></strong>: Adds liquidity to the Uniswap pool.</li>
-<li><strong><code>removeLiquidity(uint256 liquidity)</code></strong>: Removes liquidity from the pool.</li>
-</ul>
-<h3 id="events">Events</h3>
-<ul>
-<li><strong><code>LiquidityAdded(uint256 tokenAmount, uint256 ethAmount)</code></strong>: Emitted when liquidity is added.</li>
-<li><strong><code>LiquidityRemoved(uint256 liquidity)</code></strong>: Emitted when liquidity is removed.</li>
-</ul>
-<h2 id="governance">Governance</h2>
-<h3 id="voting-power">Voting Power</h3>
-<ul>
-<li>Token holders can participate in governance by voting on proposals.</li>
-<li>Voting power is proportional to the number of tokens held.</li>
-</ul>
-<h3 id="proposals">Proposals</h3>
-<ul>
-<li>Proposals can include changes to the protocol, new feature implementations, or community initiatives.</li>
-</ul>
-<h2 id="security-and-compliance">Security and Compliance</h2>
-<h3 id="security-measures">Security Measures</h3>
-<ul>
-<li>Comprehensive unit testing.</li>
-<li>Regular code audits.</li>
-<li>Monitoring for vulnerabilities.</li>
-</ul>
-<h3 id="compliance">Compliance</h3>
-<ul>
-<li>Adherence to relevant regulatory guidelines to ensure legal compliance.</li>
-</ul>
-<p>By implementing these token mechanisms, the Meme Token Launcher ensures a robust and dynamic ecosystem that benefits all participants.</p>
+<p>will need a new contract/module that tallies rewards for claims. this could be on a meme DAO as well</p>
 
                                 
                                 </section>
@@ -333,7 +286,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Token Mechanisms","level":"1.8","depth":1,"previous":{"title":"UI Components","level":"1.7","depth":1,"path":"ui-components.md","ref":"ui-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["search","sharing","scripts","livereload"],"pluginsConfig":{"scripts":{"files":["./script.js"]},"search":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./styles.css"}},"file":{"path":"token-mechanisms.md","mtime":"2024-05-30T19:40:11.363Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-30T20:37:06.864Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Token Mechanisms","level":"1.8","depth":1,"previous":{"title":"UI Components","level":"1.7","depth":1,"path":"ui-components.md","ref":"ui-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["search","sharing","scripts","livereload"],"pluginsConfig":{"scripts":{"files":["./script.js"]},"search":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./styles.css"}},"file":{"path":"token-mechanisms.md","mtime":"2024-05-30T20:39:02.013Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-31T12:49:07.971Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -355,7 +308,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-scripts/93030acd25460f851cad060a963bbcd0-script.js"></script>
+        <script src="gitbook/gitbook-plugin-scripts/1b33584fe66c7b3067f440a3e629a1fd-script.js"></script>
         
     
         
