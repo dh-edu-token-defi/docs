@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('Script loaded');  // Add this line
 
     const toggle = document.createElement('button');
-    toggle.innerText = 'Toggle Dark Mode';
+    toggle.innerText = '🌙 / 🌞';
     toggle.style.position = 'fixed';
     toggle.style.bottom = '10px';
     toggle.style.right = '10px';
