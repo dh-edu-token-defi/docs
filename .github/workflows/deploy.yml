@@ -52,7 +52,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: gitbook
-        path: ./_book
 
     - name: List files in artifact directory
       run: ls -al ./_book
@@ -60,5 +59,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.GH_TOKEN }}
         publish_dir: ./_book
